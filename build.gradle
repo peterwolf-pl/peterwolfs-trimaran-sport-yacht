@@ -1,0 +1,77 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	mavenCentral()
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"peterwolfs_trimaran_sport_yacht" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// One explicit artifact: do not load multiple installed versions or stale class directories.
+	def windSailsJar = file(findProperty('wind_sails_jar') ?: '../pw_wind_n_sails/build/libs/pw_wind_n_sails-1.0.3+26.3.jar')
+	if (!windSailsJar.isFile()) throw new GradleException('Build Wind & Sails first or set -Pwind_sails_jar=/path/to/mod.jar')
+	compileOnly files(windSailsJar)
+	clientCompileOnly files(windSailsJar)
+	localRuntime files(windSailsJar)
+
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.11.0'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+sourceSets.test.compileClasspath += sourceSets.client.output
+sourceSets.test.runtimeClasspath += sourceSets.client.output
+
+test {
+	useJUnitPlatform()
+}
+
+tasks.register('generateAssets', Exec) {
+	commandLine 'python3', 'generate_assets.py'
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+}
+
+java {
+	withSourcesJar()
+
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(25)
+	}
+
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}

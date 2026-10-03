@@ -1,0 +1,60 @@
+{
+  "entity.peterwolfs_trimaran_sport_yacht.trimaran_sport_yacht": "Trimaran sportowy",
+  "item.peterwolfs_trimaran_sport_yacht.trimaran_sport_yacht": "Trimaran sportowy",
+  "item.peterwolfs_trimaran_sport_yacht.trimaran_sport_yacht.desc": "Trimaran regatowy 16 × 11,25 bloku: trzy kadłuby, karbonowe ramiona, dwie siatki, foile, trzy stery, żółta kabina i granatowe żagle.",
+  "itemGroup.peterwolfs_trimaran_sport_yacht.group": "Peterwolf's Trimaran Sport Yacht",
+  "key.peterwolfs_trimaran_sport_yacht.engine": "Włącz/wyłącz silniki pomocnicze (Z)",
+  "key.peterwolfs_trimaran_sport_yacht.sail": "Postaw / zwiń żagle (X)",
+
+  "message.peterwolfs_trimaran_sport_yacht.engine_on": "§a⚓ Silniki pomocnicze URUCHOMIONE [W: Gaz | S: Wsteczny | Z: Stop]",
+  "message.peterwolfs_trimaran_sport_yacht.engine_off": "§c⚓ Silniki pomocnicze WYŁĄCZONE",
+  "message.peterwolfs_trimaran_sport_yacht.sails_unfurled": "§b⛵ Żagle POSTAWIONE",
+  "message.peterwolfs_trimaran_sport_yacht.sails_furled": "§e⛵ Żagle ZWINIĘTE",
+  "message.peterwolfs_trimaran_sport_yacht.sails_unfurled_engine_cut": "§b⛵ Żagle POSTAWIONE (Silniki wyłączone)",
+  "message.peterwolfs_trimaran_sport_yacht.helm_claimed": "§a⚓ Przejęto ster! [A/D: Ster, W/S: Gaz/Szoty, Z: Silnik, X: Żagle, Shift: Zejdź]",
+  "message.peterwolfs_trimaran_sport_yacht.helm_occupied": "§e⚠ Koło sterowe jest już zajęte!",
+  "message.peterwolfs_trimaran_sport_yacht.water_too_shallow": "§e⚠ Zbyt płytka woda! Trimaran wymaga min. 2 bloków głębokości.",
+  "message.peterwolfs_trimaran_sport_yacht.grounded_warning": "§c⚠ Kadłub na mieliźnie! Trimaran utknął na płyciźnie.",
+  "message.peterwolfs_trimaran_sport_yacht.grounded_hud": "§c⚠ TRIMARAN NA MIELIŹNIE — WRZUĆ WSTECZNY (S) BY SPŁYNĄĆ",
+  "message.peterwolfs_trimaran_sport_yacht.cleat_untied": "§eLina cumownicza odwiązana z knagi #%d",
+  "message.peterwolfs_trimaran_sport_yacht.cleat_moored": "§aTrimaran przycumowany z knagi #%d do słupka",
+  "message.peterwolfs_trimaran_sport_yacht.cleat_held": "§bLina cumownicza przymocowana z knagi #%d do twoich rąk",
+
+  "message.peterwolfs_trimaran_sport_yacht.anchor_lifted": "§6[Kotwica]§r Kotwica podniesiona z knagi: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.anchor_attached": "§6[Kotwica]§r Kotwica zabezpieczona na knadze: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_untied_cleat": "§e[Cumowanie]§r Lina odwiązana z knagi: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_post_to_cleat": "§a[Cumowanie]§r Lina zamocowana ze słupka do knagi: §f%s§r!",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_entity_to_cleat": "§a[Cumowanie]§r Lina zamocowana do knagi: §f%s§r!",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_cleat_selected": "§b[Cumowanie]§r Wybrano knagę: §f%s§r. Kliknij PPM na podświetlony słupek.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_untied_post": "§e[Cumowanie]§r Lina odwiązana ze słupka: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_cleat_to_post": "§a[Cumowanie]§r Lina zamocowana z knagi §f%s§r do słupka!",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_post_selected": "§b[Cumowanie]§r Wybrano słupek. Kliknij PPM na podświetloną knagę na trimaranie.",
+
+  "message.peterwolfs_trimaran_sport_yacht.hike_windward": "§6[Balast] Przejście na nawietrzny kadłub (Spacja: powrót za ster)",
+  "message.peterwolfs_trimaran_sport_yacht.hike_center": "§7[Balast] Powrót na stanowisko sterowe (Spacja: nawietrzna)",
+
+  "cleat.peterwolfs_trimaran_sport_yacht.bow_port": "Knaga dziobowa (lewy kadłub)",
+  "cleat.peterwolfs_trimaran_sport_yacht.midship_port": "Knaga burtowa (lewy kadłub)",
+  "cleat.peterwolfs_trimaran_sport_yacht.stern_port": "Knaga rufowa (lewy kadłub)",
+  "cleat.peterwolfs_trimaran_sport_yacht.bow_starboard": "Knaga dziobowa (prawy kadłub)",
+  "cleat.peterwolfs_trimaran_sport_yacht.midship_starboard": "Knaga burtowa (prawy kadłub)",
+  "cleat.peterwolfs_trimaran_sport_yacht.stern_starboard": "Knaga rufowa (prawy kadłub)",
+
+  "hud.peterwolfs_trimaran_sport_yacht.motor_forward": "SILNIKI: NAPRZÓD [%s] (W: Gaz | S: Wsteczny | Z: Stop)",
+  "hud.peterwolfs_trimaran_sport_yacht.motor_reverse": "SILNIKI: WSTECZ [%s] (W: Gaz | S: Wsteczny | Z: Stop)",
+  "hud.peterwolfs_trimaran_sport_yacht.motor_neutral": "SILNIKI: LUZ [0%%] (W: Naprzód | S: Wstecz | Z: Stop)",
+  "hud.peterwolfs_trimaran_sport_yacht.sails_hoisted": "ŻAGLE: POSTAWIONE [Szoty %s] (X: Zwiń | Z: Silniki)",
+  "hud.peterwolfs_trimaran_sport_yacht.sails_furled_engine_off": "ŻAGLE ZWINIĘTE / SILNIKI WYŁĄCZONE (Z: Silniki | X: Żagle)",
+
+  "hud.peterwolfs_trimaran_sport_yacht.helm_center": "Płetwy: Środek",
+  "hud.peterwolfs_trimaran_sport_yacht.helm_port": "Płetwy: Bakburta %s°",
+  "hud.peterwolfs_trimaran_sport_yacht.helm_starboard": "Płetwy: Sterburta %s°",
+
+  "hud.peterwolfs_trimaran_sport_yacht.hike_windward": "§6Balast: Nawietrzna [Spacja]§r",
+  "hud.peterwolfs_trimaran_sport_yacht.hike_center": "§7Balast: Centrum [Spacja]§r",
+
+  "hud.peterwolfs_trimaran_sport_yacht.depth_grounded": "§cMIELIZNA§r",
+  "hud.peterwolfs_trimaran_sport_yacht.depth_safe": "§aWODOWANIE§r",
+
+  "hud.peterwolfs_trimaran_sport_yacht.line2": "Prędkość: %s w.  |  %s  |  Status: %s  |  [Shift]: Zejdź"
+}

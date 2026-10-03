@@ -1,0 +1,15 @@
+.gradle/
+build/
+bin/
+out/
+.pi/
+.pi-many-agents/
+.idea/
+*.iml
+.DS_Store
+**/.DS_Store
+run/
+logs/
+client-gametest-screenshots/
+*.log
+*.log.gz

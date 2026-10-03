@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "peterwolfs_trimaran_sport_yacht",
+  "version": "${version}",
+  "name": "Peterwolf's Trimaran Sport Yacht",
+  "description": "Ocean racing trimaran: 16 × 11.25 blocks, three wave-piercing hulls, carbon crossbeams, foils, yellow shelter and navy square-top sails. Wind & Sails integration for Fabric 26.3.",
+  "authors": ["Piotrek"],
+  "license": "CC0-1.0",
+  "environment": "*",
+  "icon": "assets/peterwolfs_trimaran_sport_yacht/icon.png",
+  "entrypoints": {
+    "main": ["com.piotrek.trimaranyacht.TrimaranSportYachtMod"],
+    "client": ["com.piotrek.trimaranyacht.client.TrimaranSportYachtClient"]
+  },
+  "mixins": ["peterwolfs_trimaran_sport_yacht.client.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*",
+    "pw_wind_n_sails": ">=1.0.3"
+  }
+}

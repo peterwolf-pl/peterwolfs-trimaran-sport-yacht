@@ -1,0 +1,60 @@
+{
+  "entity.peterwolfs_trimaran_sport_yacht.trimaran_sport_yacht": "Trimaran Sport Yacht",
+  "item.peterwolfs_trimaran_sport_yacht.trimaran_sport_yacht": "Trimaran Sport Yacht",
+  "item.peterwolfs_trimaran_sport_yacht.trimaran_sport_yacht.desc": "16 × 11.25 block ocean racing trimaran: three hulls, carbon crossbeams, twin nets, foils, three rudders, yellow shelter and navy sails.",
+  "itemGroup.peterwolfs_trimaran_sport_yacht.group": "Peterwolf's Trimaran Sport Yacht",
+  "key.peterwolfs_trimaran_sport_yacht.engine": "Toggle Auxiliary Engine (Z)",
+  "key.peterwolfs_trimaran_sport_yacht.sail": "Hoist / Furl Sails (X)",
+
+  "message.peterwolfs_trimaran_sport_yacht.engine_on": "§a⚓ Auxiliary Engines STARTED [W: Throttle | S: Reverse | Z: Stop]",
+  "message.peterwolfs_trimaran_sport_yacht.engine_off": "§c⚓ Auxiliary Engines STOPPED",
+  "message.peterwolfs_trimaran_sport_yacht.sails_unfurled": "§b⛵ Sails HOISTED",
+  "message.peterwolfs_trimaran_sport_yacht.sails_furled": "§e⛵ Sails FURLED",
+  "message.peterwolfs_trimaran_sport_yacht.sails_unfurled_engine_cut": "§b⛵ Sails HOISTED (Engines shut off)",
+  "message.peterwolfs_trimaran_sport_yacht.helm_claimed": "§a⚓ Took the helm! [A/D: Steer, W/S: Drive/Sheet, Z: Motor, X: Sails, Shift: Leave]",
+  "message.peterwolfs_trimaran_sport_yacht.helm_occupied": "§e⚠ Steering wheel is already occupied!",
+  "message.peterwolfs_trimaran_sport_yacht.water_too_shallow": "§e⚠ Water is too shallow! The trimaran requires at least 2 blocks of water depth.",
+  "message.peterwolfs_trimaran_sport_yacht.grounded_warning": "§c⚠ Hull grounded! The trimaran requires water depth to sail.",
+  "message.peterwolfs_trimaran_sport_yacht.grounded_hud": "§c⚠ TRIMARAN GROUNDED — REVERSE (S) TO FLOAT",
+  "message.peterwolfs_trimaran_sport_yacht.cleat_untied": "§eMooring line untied from cleat #%d",
+  "message.peterwolfs_trimaran_sport_yacht.cleat_moored": "§aTrimaran moored from cleat #%d to dock post",
+  "message.peterwolfs_trimaran_sport_yacht.cleat_held": "§bMooring line attached from cleat #%d to your hands",
+
+  "message.peterwolfs_trimaran_sport_yacht.anchor_lifted": "§6[Anchor]§r Anchor raised from cleat: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.anchor_attached": "§6[Anchor]§r Anchor secured to cleat: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_untied_cleat": "§e[Mooring]§r Line untied from cleat: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_post_to_cleat": "§a[Mooring]§r Line tied from dock post to cleat: §f%s§r!",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_entity_to_cleat": "§a[Mooring]§r Line tied to cleat: §f%s§r!",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_cleat_selected": "§b[Mooring]§r Cleat selected: §f%s§r. Now right-click the highlighted dock post.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_untied_post": "§e[Mooring]§r Line untied from dock post: §f%s§r.",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_cleat_to_post": "§a[Mooring]§r Line tied from cleat §f%s§r to dock post!",
+  "message.peterwolfs_trimaran_sport_yacht.mooring_post_selected": "§b[Mooring]§r Dock post selected. Now right-click the highlighted cleat on the trimaran.",
+
+  "message.peterwolfs_trimaran_sport_yacht.hike_windward": "§6[Ballast] Moved to the windward hull rail (Space: return to centre)",
+  "message.peterwolfs_trimaran_sport_yacht.hike_center": "§7[Ballast] Returned to centre behind the helm (Space: windward)",
+
+  "cleat.peterwolfs_trimaran_sport_yacht.bow_port": "Port Bow Cleat",
+  "cleat.peterwolfs_trimaran_sport_yacht.midship_port": "Port Midship Cleat",
+  "cleat.peterwolfs_trimaran_sport_yacht.stern_port": "Port Stern Cleat",
+  "cleat.peterwolfs_trimaran_sport_yacht.bow_starboard": "Starboard Bow Cleat",
+  "cleat.peterwolfs_trimaran_sport_yacht.midship_starboard": "Starboard Midship Cleat",
+  "cleat.peterwolfs_trimaran_sport_yacht.stern_starboard": "Starboard Stern Cleat",
+
+  "hud.peterwolfs_trimaran_sport_yacht.motor_forward": "ENGINES: AHEAD [%s] (W: Throttle | S: Ease | Z: Stop)",
+  "hud.peterwolfs_trimaran_sport_yacht.motor_reverse": "ENGINES: ASTERN [%s] (W: Throttle | S: Ease | Z: Stop)",
+  "hud.peterwolfs_trimaran_sport_yacht.motor_neutral": "ENGINES: NEUTRAL [0%%] (W: Ahead | S: Astern | Z: Stop)",
+  "hud.peterwolfs_trimaran_sport_yacht.sails_hoisted": "SAILS: HOISTED [Sheet %s] (X: Furl | Z: Motor)",
+  "hud.peterwolfs_trimaran_sport_yacht.sails_furled_engine_off": "SAILS FURLED / ENGINES OFF (Z: Motor | X: Sails)",
+
+  "hud.peterwolfs_trimaran_sport_yacht.helm_center": "Helm: Center",
+  "hud.peterwolfs_trimaran_sport_yacht.helm_port": "Helm: Port %s°",
+  "hud.peterwolfs_trimaran_sport_yacht.helm_starboard": "Helm: Starboard %s°",
+
+  "hud.peterwolfs_trimaran_sport_yacht.hike_windward": "§6Ballast: Windward [Space]§r",
+  "hud.peterwolfs_trimaran_sport_yacht.hike_center": "§7Ballast: Center [Space]§r",
+
+  "hud.peterwolfs_trimaran_sport_yacht.depth_grounded": "§cGROUNDED§r",
+  "hud.peterwolfs_trimaran_sport_yacht.depth_safe": "§aFLOATING§r",
+
+  "hud.peterwolfs_trimaran_sport_yacht.line2": "Speed: %s kn  |  %s  |  Status: %s  |  [Shift]: Step away"
+}

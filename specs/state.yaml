@@ -1,0 +1,27 @@
+project: peterwolfs-trimaran-sport-yacht
+phase: verify
+active_flow: model_build
+version: 1.0.0+26.3
+stack:
+  minecraft: '26.3'
+  java: 25
+  loader: 0.19.5
+  fabric_api: 0.160.7+26.3
+  loom: 1.17-SNAPSHOT
+implementation:
+  geometry: complete
+  assets: complete
+  standalone_mod_namespace: complete
+  obj_export: complete
+  headless_tests: 14
+  client_gametest: not_requested
+constraints:
+  - Do not launch a Minecraft visual test without an explicit user request.
+  - Do not change sibling mods.
+  - Geometry is Java LayerDefinition; JSON export is tooling-only.
+limits:
+  - Fixed visual foils; no hydrofoil flight simulation or appendage collision.
+  - Racing shelter has no enterable interior or sleeping mechanic.
+  - Runtime sailing, deck following and visual quality still require in-game verification.
+handoff:
+  next: User review of model; optional explicit request for in-game visual verification.

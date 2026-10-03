@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SWC",
+    "FBP",
+    "PPP"
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "W": "minecraft:white_wool",
+    "S": "minecraft:compass",
+    "C": "minecraft:iron_chain",
+    "F": "minecraft:furnace",
+    "B": "#minecraft:beds"
+  },
+  "result": {
+    "id": "peterwolfs_trimaran_sport_yacht:trimaran_sport_yacht",
+    "count": 1
+  }
+}

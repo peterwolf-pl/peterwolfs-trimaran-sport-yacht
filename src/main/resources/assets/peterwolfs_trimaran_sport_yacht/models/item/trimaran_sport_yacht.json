@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "peterwolfs_trimaran_sport_yacht:item/trimaran_sport_yacht"
+  }
+}
