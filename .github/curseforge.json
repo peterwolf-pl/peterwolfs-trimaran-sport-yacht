@@ -1,0 +1,26 @@
+{
+  "projectId": null,
+  "title": "Peterwolf's Trimaran Sport Yacht",
+  "summary": "Ocean racing trimaran: 16 × 11.25 blocks, three wave-piercing hulls, carbon crossbeams, foils, yellow shelter and navy square-top sails. Wind & Sails integration for Fabric 26.3.",
+  "description": "# Peterwolf's Trimaran Sport Yacht\n\nMod **Fabric 26.3 / Java 25**, zależny od **Wind & Sails**. Osobny identyfikator: `peterwolfs_trimaran_sport_yacht`. Katamaran nie jest wymagany.\n\n## Model\n\nRegatowy trimaran inspirowany dostarczonymi zdjęciami, z własnym malowaniem PW 03:\n\n- Kadłub centralny **16 bloków**, pływaki **15 bloków**, szerokość **11,25 bloku**.\n- Maszt **28 bloków** nad punktem odniesienia kadłuba. Dla porównania katamaran ma około 8 × 5 bloków.\n- Trzy smukłe, stopniowane kadłuby; łukowe ramiona karbonowe; dwie siatki z przezroczystymi oczkami.\n- Niska żółta kabina, ciemne szyby, otwarty kokpit, kabestany, koło sterowe, knagi i platforma wejściowa.\n- Grot square-top z 48 pasów i ciągłą grafiką konturową. Fok obraca się wokół pochylonego sztagu.\n- Foile, miecz i trzy niezależnie obracane stery T. Śruba napędu pomocniczego animowana tylko przy włączonym silniku.\n- Atlas **2048 × 2048**. Model encji jest Java `LayerDefinition`, nie JSON.\n\nFoile są stałymi elementami modelu, **nie symulacją lotu hydrodynamicznego**. Kabina jest zamkniętą osłoną regatową: bez wnętrza mieszkalnego i funkcji spania. Kolizja bloków obejmuje kadłuby; podwodne płetwy są wizualne.\n\n## Instalacja i użycie\n\nDo folderu `mods` gry 26.3 dodaj:\n\n1. Fabric API dla 26.3.\n2. `pw_wind_n_sails` dla 26.3, co najmniej 1.0.3.\n3. `build/libs/peterwolfs-trimaran-sport-yacht-1.0.0+26.3.jar` — nie plik `-sources.jar`.\n\nPrzedmiot jest dostępny w osobnej zakładce kreatywnej i zakładce Wind & Sails.\n\n```mcfunction\n/give @s peterwolfs_trimaran_sport_yacht:trimaran_sport_yacht\n```\n\nPPM na wodę woduje trimaran. Wybierz rozległy akwen, minimum dwa bloki wody w miejscu wodowania. PPM na koło przejmuje ster.\n\n| Klawisz | Funkcja |\n|---|---|\n| A / D | Ster |\n| W / S | Szoty pod żaglami; gaz / wsteczny pod silnikiem |\n| X | Postaw / zwiń żagle |\n| Z | Włącz / wyłącz silnik pomocniczy |\n| Spacja | Przejdź na nawietrzną / wróć za koło |\n| Shift | Zejdź ze steru do kokpitu |\n\nKotwicę z Wind & Sails najpierw wyrzuć, następnie kliknij wybraną knagę. Smycz służy do cumowania do płotu. Zasięg knag: 14 bloków.\n\n## Budowanie\n\n```sh\nexport JAVA_HOME=$(/usr/libexec/java_home -v 25)\n./gradlew compileJava compileClientJava test build\n```\n\nDomyślna zależność kompilacji: `../pw_wind_n_sails/build/libs/pw_wind_n_sails-1.0.3+26.3.jar`.\nInną lokalizację podaj przez `-Pwind_sails_jar=/pełna/ścieżka/do/mod.jar`.\n\n## Edycja modelu i eksport\n\n- `src/main/java/com/piotrek/trimaranyacht/geometry/TrimaranGeometry.java` — geometria, hierarchia, pivoty, UV.\n- `src/main/java/com/piotrek/trimaranyacht/geometry/TrimaranLayout.java` — powierzchnie pokładu i SAT trzech kadłubów.\n- `src/client/java/com/piotrek/trimaranyacht/client/TrimaranSportYachtModel.java` — warstwy i animacje.\n\nPo zmianie geometrii uruchom (Pillow jest wymagany):\n\n```sh\npython3 generate_assets.py\npython3 tools/render_preview.py\n./gradlew compileJava compileClientJava test build\n```\n\nEksport w `build/model/`:\n- `trimaran.obj` + `trimaran.mtl` + `trimaran_sport_yacht.png` — ten sam model do importu np. w Blenderze; jednostki w metrach, oś Y w górę.\n- `geometry-preview.png` — pogląd geometrii offline, z płaskimi kolorami, bez kompletnego malowania.\n- `geometry.json` — dane pośrednie eksportera, **nie model encji Minecraft**.\n\n## Weryfikacja\n\n14 testów: proporcje, UV, styki sekcji, maski wody, knagi, żagle, pivoty, pokład, SAT, bake warstw i reset animacji.\n\nNie uruchamiano klienta Minecraft ani Client GameTest. Podgląd offline nie potwierdza wyglądu, braku migotania ani zachowania fizyki w grze. Weryfikacja w kliencie pozostaje osobnym krokiem na żądanie.\n",
+  "enabled": false,
+  "releaseType": "release",
+  "changelogType": "markdown",
+  "changelog": "",
+  "manualRelease": false,
+  "media": {
+    "youtube": [],
+    "gallery": []
+  },
+  "dependencies": [
+    {
+      "slug": "fabric-api",
+      "type": "requiredDependency"
+    },
+    {
+      "slug": "pw-wind-n-sails",
+      "type": "requiredDependency"
+    }
+  ],
+  "publishedVersion": null
+}
